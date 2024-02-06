@@ -5,7 +5,7 @@ void main() => runApp(const MyApp());
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  static const appTitle = 'Drawer Demo';
+  static const appTitle = 'Drawer Prueba';
 
   @override
   Widget build(BuildContext context) {
@@ -31,15 +31,15 @@ class _MyHomePageState extends State<MyHomePage> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
     Text(
-      'Index 0: Home',
+      'Banner Inicio',
       style: optionStyle,
     ),
     Text(
-      'Index 1: Business',
+      'Banner Ajustes',
       style: optionStyle,
     ),
     Text(
-      'Index 2: School',
+      'Banner Acerca de...',
       style: optionStyle,
     ),
   ];
@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text('Drawer Header'),
             ),
             ListTile(
-              title: const Text('Home'),
+              title: const Text('Inicio'),
               selected: _selectedIndex == 0,
               onTap: () {
                 // Update the state of the app
@@ -82,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             ListTile(
-              title: const Text('Business'),
+              title: const Text('Ajustes'),
               selected: _selectedIndex == 1,
               onTap: () {
                 // Update the state of the app
@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             ListTile(
-              title: const Text('School'),
+              title: const Text('Acerca de...'),
               selected: _selectedIndex == 2,
               onTap: () {
                 // Update the state of the app
